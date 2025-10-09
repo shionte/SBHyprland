@@ -18,7 +18,7 @@ yay -S hyprshot wlogout
 cd Documents
 
 git clone https://github.com/vinceliuice/Graphite-gtk-theme.git
-git clone https://github.com/shionte/ShioDots.git
+git clone https://github.com/shionte/ShioHyprland.git
 ```
 
 # Step 4
@@ -26,7 +26,7 @@ git clone https://github.com/shionte/ShioDots.git
 **Copy config**
 
 ```
-cd ShioDots
+cd ShioHyprland
 cp -r kitty waybar wlogout wofi hypr fastfetch ~/.config
 
 cd Graphite-gtk-theme
