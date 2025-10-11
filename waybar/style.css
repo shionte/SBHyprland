@@ -1,146 +1,135 @@
-@import "macchiato.css";
+@import url('/home/shio/.cache/wal/colors-waybar.css');
+@define-color background transparent;
+
 
 * {
-  font-family: "JetBrains Mono", Roboto, Helvetica, Arial, sans-serif;
-  font-size: 18px;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: JetBrains Mono Nerd Font;
+    color: @color1;
 }
 
 window#waybar {
-  background-color: @base;
-  border-radius: 13px;
-  transition-property: background-color;
-  transition-duration: 0.5s;
+    all: unset;
+    background-color: @background;
+    color: @color1;
 }
 
-button {
-  /* Use box-shadow instead of border so the text isn't offset */
-  box-shadow: inset 0 -3px transparent;
-  /* Avoid rounded borders under each button name */
-  border: none;
-  border-radius: 0;
+.modules-left,
+.modules-center,
+.modules-right {
+    margin-top: 10px;
+    margin-bottom: -10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border: none;
+    padding: 10px;
 }
 
-/* https://github.com/Alexays/Waybar/wiki/FAQ#the-workspace-buttons-have-a-strange-hover-effect */
-button:hover {
-  background: inherit;
-  box-shadow: inset 0 -3px #ffffff;
+.modules-center {
+    min-width: 150.5px;
 }
 
-/* you can set a style on hover for any module like this */
-#pulseaudio:hover {
-  background-color: @surface2;
+tooltip {
+    color: @color7;
+    background-color: @color1;
+}
+
+#custom-kitty:hover,
+#custom-control:hover,
+#custom-gimp:hover,
+#custom-thunar:hover,
+#custom-code:hover,
+#custom-firefox:hover,
+#clock:hover,
+#bluetooth:hover,
+#network:hover,
+#custom-cpu:hover,
+#custom-memory:hover,
+#custom-gpu:hover,
+#custom-colorpicker:hover,
+#custom-power:hover,
+#wireplumber:hover {
+    transition: all 0.3s ease;
+    color: @color7;
+}
+
+#workspaces {
+    padding: 0px 5px;
 }
 
 #workspaces button {
-  padding: 0 5px;
-  background-color: transparent;
-  color: @rosewater;
+    all: unset;
+    margin: 0px 6px;
+    padding: 0px 4px;
+    background: @color7;
+    border-radius: 50%;
+    transition: all 0.3s;
+    min-width: 15px;
 }
 
 #workspaces button:hover {
-  background: rgba(0, 0, 0, 0.2);
+    background: @color1;
 }
 
-#workspaces button.focused {
-  background-color: @rosewater;
-  color: @base;
-  box-shadow: inset 0 -3px #ffffff;
+#workspaces button.active {
+    border: none;
+    border-radius: 10px;
+    background: @color1;
+    min-width: 30px;
 }
 
-#workspaces button.urgent {
-  background-color: #eb4d4b;
+#workspaces button:hover label,
+#workspaces button.active label {
+    color: @color7;
 }
 
-#mode {
-  background-color: #64727d;
-  box-shadow: inset 0 -3px #ffffff;
-}
-
-#clock,
-#battery,
-#cpu,
-#memory,
-#temperature,
-#network,
-#pulseaudio {
-  padding: 0 10px;
-}
-
-#pulseaudio {
-  color: @maroon;
-}
-
-#network {
-  color: @yellow;
-}
-
-#temperature {
-  color: @sky;
+#group-expand {
+    padding: 0px 5px;
+    transition: all 0.3s ease;
 }
 
 #battery {
-  color: @green;
+    color: @color7;
+    padding: 0 10px;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
 }
 
-#clock {
-  color: @flamingo;
+#battery:hover {
+    color: @color7;
 }
 
-#cpu {
-  color: @peach;
+#custom-expand {
+    padding: 0px 5px;
+    color: @color7;
+    transition: all 0.3s ease;
 }
 
-#memory {
-  color: @green;
+#custom-expand:hover {
+    color: @color7;
 }
 
-#window {
-  color: @text;
+#custom-colorpicker,
+#custom-cpu,
+#custom-memory,
+#custom-gpu,
+#wireplumber,
+#bluetooth,
+#network,
+#custom-power,
+#clock,
+#custom-kitty,
+#custom-control,
+#custom-gimp,
+#custom-thunar,
+#custom-code,
+#custom-firefox {
+    padding: 0px 5px;
+    color: @color7;
+    transition: all 0.3s ease;
 }
 
-.modules-right,
-.modules-left,
-.modules-center {
-  background-color: @base;
-  border-radius: 15px;
-}
-.modules-right {
-  padding: 0 10px;
-}
-
-.modules-left {
-  padding: 0 20px;
-}
-
-.modules-center {
-  padding: 0 10px;
-}
-#battery.charging,
-#battery.plugged {
-  color: @sapphire;
-}
-
-@keyframes blink {
-  to {
-    color: #000000;
-  }
-}
-
-/* Using steps() instead of linear as a timing function to limit cpu usage */
-#battery.critical:not(.charging) {
-  background-color: #f53c3c;
-  color: #ffffff;
-  animation-name: blink;
-  animation-duration: 0.5s;
-  animation-timing-function: steps(12);
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-}
-
-label:focus {
-  background-color: #000000;
-}
-
-#pulseaudio.muted {
-  color: @text;
+#custom-endpoint {
+    color: transparent;
 }
