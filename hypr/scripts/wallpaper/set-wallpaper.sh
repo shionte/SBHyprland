@@ -2,7 +2,7 @@
 set -eu
 
 # Папка с обоями
-WALL_DIR="$HOME/.config/wallpapers"
+WALL_DIR="$HOME/Documents/Wallpaper"
 
 # Проверяем, что папка существует
 if [ ! -d "$WALL_DIR" ]; then
