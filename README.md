@@ -27,7 +27,7 @@ git clone https://github.com/shionte/ShioHyprland.git
 
 ```
 cd ShioHyprland
-cp -r kitty waybar wlogout wofi hypr fastfetch ~/.config
+cp -r kitty waybar wlogout wofi hypr fastfetch mako wallpaper cava ~/.config
 
 cd Graphite-gtk-theme
 ./install.sh
