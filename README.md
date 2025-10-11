@@ -32,8 +32,18 @@ cp -r kitty waybar wlogout wofi hypr fastfetch ~/.config
 cd Graphite-gtk-theme
 ./install.sh
 ```
-
 # Step 5
+
+**Waybar and Wofi cfg**
+
+```
+If your Waybar and Wofi configuration references a CSS file like /home/mkhmtcore/.cache/wal/colors-waybar.css, make sure to replace mkhmtcore with your actual username.
+```
+
+
+
+
+# Step 6
 
 **Zsh themes**
 
