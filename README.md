@@ -36,9 +36,10 @@ cd Graphite-gtk-theme
 
 **Waybar and Wofi cfg**
 
-```
-If your Waybar and Wofi configuration references a CSS file like /home/mkhmtcore/.cache/wal/colors-waybar.css, make sure to replace mkhmtcore with your actual username.
-```
+
+If your Waybar and Wofi configuration references a CSS file like /home/shio/.cache/wal/colors-waybar.css,
+make sure to replace mkhmtcore with your actual username.
+
 
 
 
