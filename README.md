@@ -10,7 +10,7 @@ yay -S hyprshot wlogout
 
 ```
 
-# Step 3
+# Step 2
 
 **Add repos**
 
@@ -21,7 +21,7 @@ git clone https://github.com/vinceliuice/Graphite-gtk-theme.git
 git clone https://github.com/shionte/ShioHyprland.git
 ```
 
-# Step 4
+# Step 3
 
 **Copy config**
 
@@ -32,7 +32,7 @@ cp -r kitty waybar wlogout wofi hypr fastfetch mako wallpaper cava ~/.config
 cd Graphite-gtk-theme
 ./install.sh
 ```
-# Step 5
+# Step 4
 
 **Waybar and Wofi cfg**
 
@@ -44,7 +44,7 @@ make sure to replace mkhmtcore with your actual username.
 
 
 
-# Step 6
+# Step 5
 
 **Zsh themes**
 
