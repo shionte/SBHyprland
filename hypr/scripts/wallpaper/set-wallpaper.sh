@@ -2,7 +2,7 @@
 set -eu
 
 # Папка с обоями
-WALL_DIR="$HOME/Documents/Wallpaper"
+WALL_DIR="$HOME/Documents/ShioHyprlans/Wallpaper"
 
 # Проверяем, что папка существует
 if [ ! -d "$WALL_DIR" ]; then
