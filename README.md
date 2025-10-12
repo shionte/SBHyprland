@@ -6,7 +6,7 @@ git clone https://aur.archlinux.org/yay.git
 cd yay
 makepkg -si
 
-yay -S hyprshot wlogout
+yay -S hyprshot wlogout python-pywal16
 
 ```
 
@@ -57,6 +57,8 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:
 nvim ~/.zshrc
 ZSH_THEME="powerlevel10k/powerlevel10k"
 plugins=(git zsh-autosuggestions zsh-syntax-highlighting)
+# pywal Colors
+[ -f ~/.cache/wal/colors.zsh ] && source ~/.cache/wal/colors.zsh
 source ~/.zshrc
 
 chsh
