@@ -1,18 +1,16 @@
-@import url('/home/shio/.cache/wal/colors-waybar.css');
-@define-color background transparent;
-
+/* ~/.config/waybar/style.css */
+@import url("~/.cache/wal/colors-waybar.css");
 
 * {
-    font-size: 16px;
-    font-weight: bold;
-    font-family: JetBrains Mono Nerd Font;
-    color: @color1;
+  font-family: "Fira Code", monospace;
+  font-size: 13px;
+  border-radius: 10px;
 }
 
 window#waybar {
-    all: unset;
-    background-color: @background;
-    color: @color1;
+  background: @background;
+  color: @foreground;
+  border-bottom: 2px solid @color3;
 }
 
 .modules-left,
