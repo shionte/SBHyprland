@@ -1,5 +1,9 @@
+/* ~/.config/wofi/style.css */
 window {
-  background-color: #1a1b26;
+  background-color: @background;
+  color: @foreground;
+  border-radius: 12px;
+  border: 2px solid @color3;
 }
 
 * {
