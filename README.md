@@ -41,7 +41,7 @@ git clone https://github.com/shionte/SBHyprland.git
 
 ```
 cd SBHyprland
-cp -r kitty waybar wlogout wofi hypr fastfetch mako wallpaper cava ~/.config
+cp -r kitty waybar wlogout wofi hypr fastfetch wallpaper cava ~/.config
 
 cd Graphite-gtk-theme
 ./install.sh
