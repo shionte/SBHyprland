@@ -32,19 +32,10 @@ cp -r kitty waybar wlogout wofi hypr fastfetch mako wallpaper cava ~/.config
 cd Graphite-gtk-theme
 ./install.sh
 ```
+
+
+
 # Step 4
-
-**Waybar and Wofi cfg**
-
-
-If your Waybar and Wofi configuration references a CSS file like /home/shio/.cache/wal/colors-waybar.css,
-make sure to replace mkhmtcore with your actual username.
-
-
-
-
-
-# Step 5
 
 **Zsh themes**
 
@@ -56,9 +47,7 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:
 
 nvim ~/.zshrc
 ZSH_THEME="powerlevel10k/powerlevel10k"
-plugins=(git zsh-autosuggestions zsh-syntax-highlighting)
-# pywal Colors
-[ -f ~/.cache/wal/colors.zsh ] && source ~/.cache/wal/colors.zsh
+plugins=(git zsh-autosuggestions zsh-syntax-highlighting
 source ~/.zshrc
 
 chsh
