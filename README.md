@@ -18,7 +18,7 @@ yay -S hyprshot wlogout python-pywal16
 cd Documents
 
 git clone https://github.com/vinceliuice/Graphite-gtk-theme.git
-git clone https://github.com/shionte/ShioHyprland.git
+git clone https://github.com/shionte/SBHyprland.git
 ```
 
 # Step 3
@@ -26,7 +26,7 @@ git clone https://github.com/shionte/ShioHyprland.git
 **Copy config**
 
 ```
-cd ShioHyprland
+cd SBHyprland
 cp -r kitty waybar wlogout wofi hypr fastfetch mako wallpaper cava ~/.config
 
 cd Graphite-gtk-theme
