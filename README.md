@@ -35,7 +35,7 @@ git clone https://github.com/shionte/SBHyprland.git
 
 ```
 
-# Step 3
+# 📋Step 3
 
 **Copy configs to ~/.config**
 
@@ -49,7 +49,7 @@ cd Graphite-gtk-theme
 
 
 
-# Step 4
+# ⚙️Step 4
 
 **Setup Zsh and Powerlevel10k**
 
@@ -80,6 +80,7 @@ source ~/.zshrc
 reboot
 ```
 
+# 💡Tips
 🎨 Optional Tweaks
 Wallpaper & Cava visualizer already included in configs.
 Customize waybar, kitty, wofi, mako, and other configs in ~/.config.
