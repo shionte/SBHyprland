@@ -1,5 +1,14 @@
-# Step 1
-```
+# 🌌 SBHyprland Setup Guide
+
+A complete step-by-step guide to set up **Hyprland** with custom configs, GTK themes, Zsh, and essential tools on Arch Linux.
+
+---
+
+## 📦 Step 1
+
+**Install Packages**
+
+```bash
 sudo pacman -S wofi kitty freetype2 cava zsh git hyprlock hyprpaper waybar ttf-font-awesome otf-font-awesome ttf-jetbrains-mono obsidian pavucontrol feh ranger thunar meson nwg-look papirus-icon-theme fastfetch file powerline-fonts inetutils ttf-dejavu bluez bluez-utils blueman telegram-desktop vlc
 
 # Clone and install yay (AUR helper)
@@ -9,12 +18,11 @@ makepkg -si
 
 # Install additional AUR packages
 yay -S hyprshot wlogout python-pywal16
-
 ```
 
-# Step 2
+# 🌐 Step 2
 
-**Add repos**
+**Add Repositories / Themes**
 
 ```
 cd ~/Documents
@@ -29,7 +37,7 @@ git clone https://github.com/shionte/SBHyprland.git
 
 # Step 3
 
-**Copy config**
+**Copy configs to ~/.config**
 
 ```
 cd SBHyprland
@@ -43,24 +51,22 @@ cd Graphite-gtk-theme
 
 # Step 4
 
-**Zsh themes**
+**Setup Zsh and Powerlevel10k**
 
 ```
 # Install Oh My Zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
 # Install Powerlevel10k theme
-git clone --depth=1 https://github.com/romkatv/powerlevel10k.git \
-  "${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k"
+git clone --depth=1 https://github.com/romkatv/powerlevel10k.git "${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k"
 
 # Install plugins
-git clone https://github.com/zsh-users/zsh-autosuggestions \
-  ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+```
 
-git clone https://github.com/zsh-users/zsh-syntax-highlighting.git \
-  ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
-
-
+**Edit your .zshrc**
+```
 nvim ~/.zshrc
 
 # Add or edit these lines:
@@ -69,10 +75,15 @@ plugins=(git zsh-autosuggestions zsh-syntax-highlighting)
 
 # Save and apply changes
 source ~/.zshrc
-chsh -s /bin/zsh
+
 
 reboot
 ```
+
+🎨 Optional Tweaks
+Wallpaper & Cava visualizer already included in configs.
+Customize waybar, kitty, wofi, mako, and other configs in ~/.config.
+
 📝 Notes & Subscription
 This setup is optimized for Hyprland and Arch Linux.
 Some packages and configs are optional; tailor it to your needs.
