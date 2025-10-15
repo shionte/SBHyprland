@@ -1,13 +1,9 @@
-show=drun
-prompt=Launch:
-columns=3
-lines=6
-allow_images=true
-image_size=32
-location=center
-hide_scroll=true
-insensitive=true
-width=600
-height=400
-no_actions=true
-gtk_dark=true
+# ~/.config/wofi/config
+prompt = Run:
+show = drun
+columns = 2
+insensitive = true
+term = foot
+hide_scroll = true
+layer = top
+location = center
