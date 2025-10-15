@@ -1,46 +1,39 @@
+@import url("file:///home/$USER/.cache/wal/colors.css");
+
 window {
-  background-color: #1a1b26;
-}
-
-* {
-  font-family: "Jetbrains Mono";
-  color: #fff;
-}
-
-#scroll {
-  padding: 0.5rem;
+  margin: 0px;
+  border: 1px solid @color1;
+  border-radius: 12px;
+  background-color: rgba(25, 28, 34, 0.8);
+  font-family: "JetBrainsMono Nerd Font";
+  font-size: 13px;
+  color: @foreground;
 }
 
 #input {
-  background-color: #1a1b26;
-  color: #c0caf5;
-  outline: none;
-  box-shadow: none;
-  border: 0;
-  border-radius: 0;
-  font-size: 1rem;
-  padding: 0.5rem;
+  margin: 8px;
+  border-radius: 8px;
+  padding: 6px 10px;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: @foreground;
 }
 
 #inner-box {
-  margin: 0.5rem;
-  font-size: 1rem;
-}
-
-#img {
-  margin: 10px 10px;
+  margin: 8px;
 }
 
 #entry {
-  border-radius: 0.5rem;
+  border-radius: 8px;
+  padding: 6px;
+  margin: 4px 0;
 }
 
 #entry:selected {
-  background-color: #c0caf5;
-  outline: none;
+  background-color: @color2;
+  color: @background;
 }
 
-#text:selected {
-  color: #1a1b26;
+#img {
+  margin-right: 8px;
 }
-
