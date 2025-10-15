@@ -1,0 +1,31 @@
+@import url("file:///home/$USER/.cache/wal/colors-waybar.css");
+
+* {
+  font-family: "JetBrainsMono Nerd Font", monospace;
+  font-size: 13px;
+  color: @foreground;
+}
+
+window#waybar {
+  background-color: rgba(25, 28, 34, 1.0);
+  border-radius: 10px;
+  padding: 6px 14px;
+  border: 1px solid rgba(255,255,255,0.05);
+}
+
+#workspaces button {
+  background-color: rgba(255, 255, 255, 0.08);
+  border-radius: 6px;
+  margin: 2px 4px;
+  padding: 0 8px;
+  color: @foreground;
+}
+
+#workspaces button.active {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: @color2;
+}
+
+#tray, #clock, #battery, #network, #pulseaudio, #bluetooth, #power {
+  margin: 0 10px;
+}

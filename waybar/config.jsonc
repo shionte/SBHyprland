@@ -1,0 +1,32 @@
+{
+    "layer": "top",
+    "position": "top",
+    "height": 36,
+    "modules-left": ["clock", "pulseaudio"],
+    "modules-center": ["hyprland/workspaces"],
+    "modules-right": ["tray", "network", "bluetooth", "battery", "power"],
+    "clock": {
+        "format": "{:%I:%M:%S %p}",
+        "tooltip-format": "<b>{:%A, %d %B %Y}</b>",
+        "interval": 1
+    },
+    "pulseaudio": {
+        "format": "  {volume}%",
+        "tooltip-format": "Volume: {volume}%"
+    },
+    "battery": {
+        "format": "{capacity}%",
+        "tooltip-format": "Battery: {capacity}%"
+    },
+    "network": {
+        "format-wifi": "  {signalStrength}%",
+        "tooltip-format": "{ipaddr}"
+    },
+    "bluetooth": {
+        "format": ""
+    },
+    "power": {
+        "format": "⏻",
+        "on-click": "poweroff"
+    }
+}
